@@ -10,5 +10,6 @@ namespace Products.Entity
     {
         public int MyProperty1 { get; set; }
         public string MyProperty2 { get; set; }
+        public int MyProperty3 { get; set; }
     }
 }
