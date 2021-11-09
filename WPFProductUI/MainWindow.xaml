@@ -1,0 +1,33 @@
+﻿<Window x:Class="WPFProductUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFProductUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="611.5" Width="867.5">
+    <Grid Margin="0,0,-8,-3">
+        <Label x:Name="lbl_ProdID" Content="Product ID" HorizontalAlignment="Left" Margin="36,22,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_ProdName" Content="Product Name" HorizontalAlignment="Left" Margin="36,62,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_Category" Content="Category" HorizontalAlignment="Left" Margin="36,106,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_Price" Content="Price" HorizontalAlignment="Left" Margin="36,148,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_Qty" Content="Quantity" HorizontalAlignment="Left" Margin="36,190,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_ProdID" HorizontalAlignment="Left" Height="22" Margin="164,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_ProdName" HorizontalAlignment="Left" Height="22" Margin="164,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_Category" HorizontalAlignment="Left" Height="22" Margin="164,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_Price" HorizontalAlignment="Left" Height="22" Margin="164,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_Qty" HorizontalAlignment="Left" Height="22" Margin="164,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="239" Margin="36,256,0,0" VerticalAlignment="Top" Width="794"/>
+        <Button x:Name="btn_Add" Content="Add" HorizontalAlignment="Left" Margin="473,37,0,0" VerticalAlignment="Top" Width="97" Click="Btn_Add_Click"/>
+        <Button x:Name="btn_Delete" Content="Delete" HorizontalAlignment="Left" Margin="473,122,0,0" VerticalAlignment="Top" Width="97" Click="Btn_Delete_Click"/>
+        <Button x:Name="btn_Update" Content="Update" HorizontalAlignment="Left" Margin="667,37,0,0" VerticalAlignment="Top" Width="109" Click="Btn_Update_Click"/>
+        <Button x:Name="btn_SearchByID" Content="Search By ID" HorizontalAlignment="Left" Margin="667,122,0,0" VerticalAlignment="Top" Width="109" Click="Btn_SearchByID_Click"/>
+        <Button x:Name="btn_SearchByName" Content="Search By Name" HorizontalAlignment="Left" Margin="473,201,0,0" VerticalAlignment="Top" Width="97" Click="Btn_SearchByName_Click"/>
+        <Button x:Name="btn_First" Content="|&lt;" HorizontalAlignment="Left" Margin="113,526,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_Previous" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="298,526,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_Next" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="473,526,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_Last" Content="&gt;|" HorizontalAlignment="Left" Margin="667,526,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnShowAllProducts" Content="Show All Products" HorizontalAlignment="Left" Margin="667,201,0,0" VerticalAlignment="Top" Width="109" Click="BtnShowAllProducts_Click"/>
+
+    </Grid>
+</Window>
